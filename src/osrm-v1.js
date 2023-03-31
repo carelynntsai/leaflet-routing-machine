@@ -348,7 +348,7 @@
 			computeInstructions =
 				true;
 
-			return this.options.serviceUrl + '/' + this.options.profile + '/' +
+			return this.options.serviceUrl() + '/' + this.options.profile + '/' +
 				locs.join(';') + '?' +
 				(options.geometryOnly ? (options.simplifyGeometry ? '' : 'overview=full') : 'overview=false') +
 				'&alternatives=' + computeAlternative.toString() +
